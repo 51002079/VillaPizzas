@@ -11,6 +11,24 @@ body {
 	padding : 0;
 } 
 
+#screen div.hidden {
+    animation: fadeOut ease 0.5s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+	margin: 0;
+    padding : 0;
+    display: none;
+}
+
+#screen div.shown { 
+    animation: fadeIn ease 0.5s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+	margin: 0;
+    padding : 0;
+    display: block;
+} 
+
 @keyframes fadeIn { 
     0% { 
         opacity: 0; 
@@ -33,6 +51,14 @@ body {
     display: block;
     height: 60vh;
     margin: 20vh auto;
+    user-select: none;
+    opacity: .8;
+}
+
+#about img {
+    display: block;
+    height: 40vh;
+    margin: 30vh auto;
     user-select: none;
     opacity: .8;
 }

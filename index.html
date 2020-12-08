@@ -1,33 +1,55 @@
 <!doctype html>
 <html lang="es-MX">
     <head>
-        <script>
-            $('a').on('click', function(event) {
-                event.preventDefault();
-                event.stopImmediatePropagation();
-                $('a.active').removeClass("active");
-                $(this).addClass("active");
-            });
-        </script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
         <link rel="stylesheet" href="styles.css">
 		<link rel="icon" href="Recursos/icono.png">
         <title>Villa Pizzas</title>
     </head>
     <body style="background-color: black">
+        <script>
+            $(document).ready(function() {
+                $('a').on('click', function(event) {
+                    event.preventDefault();
+                    event.stopImmediatePropagation();
+                    $('a.active').removeClass("active");
+                    $(this).addClass("active");
+                    $('div.shown').addClass("hidden")
+                    $('div.shown').removeClass("shown")
+                    if ($(this).is('#inicionav')) {
+                        $("#inicio").removeClass("hidden").addClass("shown");
+                    };
+                    if ($(this).is('#menunav')) {
+                        $("#menu").removeClass("hidden").addClass("shown");
+                    };
+                    if ($(this).is('#contactnav')) {
+                        $("#contact").removeClass("hidden").addClass("shown");
+                    };
+                    if ($(this).is('#aboutnav')) {
+                        $("#about").removeClass("hidden").addClass("shown");
+                    };
+                });
+            });
+        </script>
         <div id="nav">
-            <a draggable="false" href="javascript:;" onclick="something();return false;" class="active">Inicio</a>
-            <a draggable="false" href="javascript:;" onclick="something();return false;">Menú</a>
-            <a draggable="false" href="javascript:;" onclick="something();return false;">Contáctanos</a>
-            <a draggable="false" href="javascript:;" onclick="something();return false;">Acerca de nosotros</a>
+            <a id="inicionav" draggable="false" href="javascript:;" class="active">Inicio</a>
+            <a id="menunav" draggable="false" href="javascript:;">Menú</a>
+            <a id="contactnav" draggable="false" href="javascript:;">Contáctanos</a>
+            <a id="aboutnav" draggable="false" href="javascript:;">Acerca de nosotros</a>
         </div>
         <div id="background" style="overflow:hidden; background-image:url(Recursos/imgbg.gif); background-position:center center; background-repeat:no-repeat; background-size: cover" >
             <div id="screen" style="background-color: rgba(0, 0, 0, 0.9); background-size: cover; overflow: hidden;">
-                <div id="inicio">
+                <div id="inicio" class="shown">
                     <img src="Recursos/logo.png" draggable="false">
                 </div>
-                <div id="menu">
+                <div id="menu" class="hidden">
                     
+                </div>
+                <div id="contact" class="hidden">
+                    
+                </div>
+                <div id="about" class="hidden">
+                    <img src="Recursos/logo.png" draggable="false">
                 </div>
             </div>
         </div>
