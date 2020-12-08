@@ -2,7 +2,7 @@
 <html lang="es-MX">
     <head>
         <script>
-            $('#nav a').click(function(){  
+            $('#nav a').on('click', function(event) {
                 event.preventDefault();
                 event.stopImmediatePropagation();
                 $('a.active').removeClass("active");
