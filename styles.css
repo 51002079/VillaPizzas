@@ -3,32 +3,6 @@
     src: url('Recursos/Product\ Sans\ Regular.ttf')
 }
 
-body { 
-    animation: fadeIn ease 2s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-	margin: 0;
-	padding : 0;
-} 
-
-#screen div.hidden {
-    animation: fadeOut ease 0.5s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-	margin: 0;
-    padding : 0;
-    display: none;
-}
-
-#screen div.shown { 
-    animation: fadeIn ease 0.5s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-	margin: 0;
-    padding : 0;
-    display: block;
-} 
-
 @keyframes fadeIn { 
     0% { 
         opacity: 0; 
@@ -47,10 +21,43 @@ body {
      } 
 } 
 
+body { 
+    animation: fadeIn ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+	margin: 0;
+	padding : 0;
+} 
+
+div.shown { 
+    animation: fadeIn ease 0.3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+	margin: 0;
+    padding : 0;
+    display: block;
+} 
+
+div.hiding {
+    animation: fadeOut ease 0.3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+	margin: 0;
+    padding : 0;
+    display: block;
+}
+
+div.hidden {
+	margin: 0;
+    padding : 0;
+    display: none;
+}
+
 #inicio img {
     display: block;
     height: 60vh;
-    margin: 20vh auto;
+    margin: auto;
+    padding: 20vh 0;
     user-select: none;
     opacity: .8;
 }
@@ -58,9 +65,18 @@ body {
 #about img {
     display: block;
     height: 40vh;
-    margin: 30vh auto;
+    margin: auto;
+    padding: 10vh 0 0;
     user-select: none;
     opacity: .8;
+}
+
+#about p {
+    font-size: 30px;
+    font-family: 'Product Sans';
+    color: white;
+    margin: 5vh 10vh;
+    text-align: center;
 }
 
 #nav {
