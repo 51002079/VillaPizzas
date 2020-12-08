@@ -2,9 +2,10 @@
 <html lang="es-MX">
     <head>
         <script>
-            $('#nav a').click(function(){
-              $('a.active').removeClass("active");
-              $(this).addClass("active");
+            $('#nav a').click(function(){  
+                event.preventDefault();
+                $('a.active').removeClass("active");
+                $(this).addClass("active");
             });
         </script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -14,10 +15,10 @@
     </head>
     <body style="background-color: black">
         <div id="nav">
-            <a draggable="false" class="active">Inicio</a>
-            <a draggable="false">Menú</a>
-            <a draggable="false">Contáctanos</a>
-            <a draggable="false">Acerca de nosotros</a>
+            <a draggable="false" href="" class="active">Inicio</a>
+            <a draggable="false" href="">Menú</a>
+            <a draggable="false" href="">Contáctanos</a>
+            <a draggable="false" href="">Acerca de nosotros</a>
         </div>
         <div id="background" style="overflow:hidden; background-image:url(Recursos/imgbg.gif); background-position:center center; background-repeat:no-repeat; background-size: cover" >
             <div id="screen" style="background-color: rgba(0, 0, 0, 0.9); background-size: cover; overflow: hidden;">
