@@ -4,6 +4,7 @@
         <script>
             $('#nav a').click(function(){  
                 event.preventDefault();
+                event.stopImmediatePropagation();
                 $('a.active').removeClass("active");
                 $(this).addClass("active");
             });
@@ -15,8 +16,8 @@
     </head>
     <body style="background-color: black">
         <div id="nav">
-            <a draggable="false" href="" class="active">Inicio</a>
-            <a draggable="false" href="">Menú</a>
+            <a draggable="false" href="#inicio" class="active">Inicio</a>
+            <a draggable="false" href="#menu">Menú</a>
             <a draggable="false" href="">Contáctanos</a>
             <a draggable="false" href="">Acerca de nosotros</a>
         </div>
