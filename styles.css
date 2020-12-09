@@ -53,12 +53,20 @@ div.hidden {
     display: none;
 }
 
-#inicio img {
+#inicio #iniciologo {
     display: block;
     height: 60vh;
     margin: auto;
-    padding: 20vh 0;
+    padding: 20vh 0 7vh;
     user-select: none;
+    opacity: .8;
+}
+
+#inicio p {
+    font-size: 30px;
+    font-family: 'Product Sans';
+    color: white;
+    text-align: center;
     opacity: .8;
 }
 
@@ -91,6 +99,7 @@ div.hidden {
     color: white;
     margin: 5vh 10vh;
     text-align: center;
+    opacity: .8;
 }
 
 #nav {

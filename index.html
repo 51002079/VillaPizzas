@@ -37,6 +37,12 @@
                     }, 300);
                 });
             });
+
+            $(window).scroll(function(){
+                $(".textblock").css("opacity", 1 - $(window).scrollTop() / 700);
+                var offsetTop = $(".extratext").offset().top;
+                $(".extratext").css("opacity", 1 - ($(window).scrollTop() - offsetTop) / 700);
+            });
         </script>
 
 
@@ -45,22 +51,32 @@
 
 
         <div id="inicio" class="shown">
-            <img src="Recursos/logo.png" draggable="false">
+            <img id="iniciologo" src="Recursos/logo.png" draggable="false">
+            <table style="margin: auto;">
+                <tr>
+                    <td><img src="Recursos/location.png" style="height:50px; padding:0 30px 0 0; opacity: .8;" draggable="false"></td>
+                    <td><p>Blvd. Adolfo Ruiz Cortines 4303, Fracc. Playa de Oro 94293, Veracruz, Ver.</p></td>
+                </tr>
+            </table>
         </div>
 
         <div id="menu" class="hidden">
-            
+            <table>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
         </div>
 
         <div id="contact" class="hidden">
-            <div style="padding: 10vh 0">
+            <div style="padding: 10vh 0 1.75vh">
                 <table style="margin: auto">
                     <tr>
-                        <td><a href="mailto:villapizzasveracruz@gmail.com" target="_blank" rel="noopener noreferrer"><img src="Recursos/email.png"></a></td>
-                        <td><a href="https://www.facebook.com/villa.pizzas" target="_blank" rel="noopener noreferrer"><img src="Recursos/facebook.png"></a></td>
-                        <td><a href="https://twitter.com/VillaPizzas" target="_blank" rel="noopener noreferrer"><img src="Recursos/twitter.png"></a></td>
-                        <td><a href="https://www.instagram.com/villa_pizzas/" target="_blank" rel="noopener noreferrer"><img src="Recursos/instagram.png"></a></td>
-                        <td><a href="https://bit.ly/2LbSPGc" target="_blank" rel="noopener noreferrer"><img src="Recursos/phone.png"></a></td>
+                        <td><a href="mailto:villapizzasveracruz@gmail.com" target="_blank" rel="noopener noreferrer"><img src="Recursos/email.png" draggable="false"></a></td>
+                        <td><a href="https://www.facebook.com/villa.pizzas" target="_blank" rel="noopener noreferrer"><img src="Recursos/facebook.png" draggable="false"></a></td>
+                        <td><a href="https://twitter.com/VillaPizzas" target="_blank" rel="noopener noreferrer"><img src="Recursos/twitter.png" draggable="false"></a></td>
+                        <td><a href="https://www.instagram.com/villa_pizzas/" target="_blank" rel="noopener noreferrer"><img src="Recursos/instagram.png" draggable="false"></a></td>
+                        <td><a href="https://bit.ly/2LbSPGc" target="_blank" rel="noopener noreferrer"><img src="Recursos/phone.png" draggable="false"></a></td>
                     </tr>
                     <tr>
                         <td><p>villapizzasveracruz@gmail.com</p></td>
@@ -71,6 +87,7 @@
                     </tr>
                 </table>
             </div>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="es" data-theme="dark"><p lang="es" dir="ltr">Las mejores pizzas han llegado a Veracruz - ¡visítanos hoy! <a href="https://t.co/z1jvANnL1p">pic.twitter.com/z1jvANnL1p</a></p>&mdash; Villa Pizzas (@VillaPizzas) <a href="https://twitter.com/VillaPizzas/status/1336490709222830083?ref_src=twsrc%5Etfw">9 de diciembre de 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
         <div id="about" class="hidden">
@@ -79,7 +96,7 @@
                     Somos un equipo de trabajo originado por la curiosidad en la gastronomía y motivado por llevar la mejor calidad posible en nuestras pizzas hacia nuestros clientes.
                 </p>
                 <p>
-                    Nuestros orígenes van desde que empezamos este proyecto en el año 2019 y se nos fue encomendado el realizar una empresa, a lo que pensamos que lo mejor era el dirigir una empresa de comida, pero hablando más personalmente de nosotros, somos un equipo de trabajo originado por la curiosidad en la gastronomía y motivado por llevar la mejor calidad posible en nuestras pizzas hacia nuestros clientes.
+                    Nuestros orígenes van desde que empezamos este proyecto en el año 2020 y se nos fue encomendado el realizar una empresa, a lo que pensamos que lo mejor era el dirigir una empresa de comida, pero hablando más personalmente de nosotros, somos un equipo de trabajo originado por la curiosidad en la gastronomía y motivado por llevar la mejor calidad posible en nuestras pizzas hacia nuestros clientes.
                 </p>
                 <p>
                     Nuestro equipo está compuesto por Antonio Aguilar, Carlos David Sandoval, Diego Figueroa, y Rodolfo Villegas.
