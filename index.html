@@ -12,7 +12,7 @@
 
         <script>
             $(document).ready(function() {
-                $('a').on('click', function(event) {
+                $('#nav a').on('click', function(event) {
                     event.preventDefault();
                     event.stopImmediatePropagation();
                     $('a.active').removeClass("active");
@@ -53,7 +53,24 @@
         </div>
 
         <div id="contact" class="hidden">
-
+            <div style="padding: 10vh 0">
+                <table style="margin: auto">
+                    <tr>
+                        <td><a href="mailto:villapizzasveracruz@gmail.com" target="_blank" rel="noopener noreferrer"><img src="Recursos/email.png"></a></td>
+                        <td><a href="https://www.facebook.com/villa.pizzas" target="_blank" rel="noopener noreferrer"><img src="Recursos/facebook.png"></a></td>
+                        <td><a href="https://twitter.com/VillaPizzas" target="_blank" rel="noopener noreferrer"><img src="Recursos/twitter.png"></a></td>
+                        <td><a href="https://www.instagram.com/villa_pizzas/" target="_blank" rel="noopener noreferrer"><img src="Recursos/instagram.png"></a></td>
+                        <td><a href="https://bit.ly/2LbSPGc" target="_blank" rel="noopener noreferrer"><img src="Recursos/phone.png"></a></td>
+                    </tr>
+                    <tr>
+                        <td><p>villapizzasveracruz@gmail.com</p></td>
+                        <td><p>facebook.com/villa.pizzas</p></td>
+                        <td><p>twitter.com/VillaPizzas</p></td>
+                        <td><p>instagram.com/villa_pizzas/</p></td>
+                        <td><p>01 800 200 1790</p></td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div id="about" class="hidden">
