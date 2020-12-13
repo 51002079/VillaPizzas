@@ -70,6 +70,86 @@ div.hidden {
     opacity: .8;
 }
 
+#menu .menutable td {
+    width: 16vw;
+    padding: 0 3vw 3vw 0;
+    vertical-align: top;
+}
+
+#menu div.headercontainer {
+    padding-bottom: 2vh;
+}
+
+#menu .menutable div {
+    width: 16vw;
+}
+
+#menu .menutable img {
+    width: 16vw;
+    opacity: .9;
+}
+
+#menu p.header {
+    font-size: 7vh;
+    font-family: 'Product Sans';
+    margin: 0;
+    padding: 1vh 0;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    opacity: .9;
+    text-decoration: underline;
+}
+
+#menu p.title {
+    font-size: 4vh;
+    font-family: 'Product Sans';
+    margin: 0;
+    padding: 1vh 0;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    opacity: .9;
+}
+
+#menu p.price {
+    font-size: 3vh;
+    font-family: 'Product Sans';
+    margin: 0;
+    color: white;
+    text-align: center;
+    opacity: .9;
+}
+
+#menu div.drinklist ul {
+    font-size: 3vh;
+    padding: .5vh;
+    font-family: 'Product Sans';
+    margin: auto;
+    color: white;
+    text-align: left;
+    opacity: .9;
+    display: inline-block;
+    list-style-position: inside;
+    column-count: 2;
+}
+
+#menu #scrolltotop img {
+    display: block;
+    margin: auto;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+	filter: invert(76%) sepia(0%) saturate(400%) hue-rotate(170deg) brightness(87%) contrast(91%);
+}
+
+#menu #scrolltotop img:hover {
+	filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(93%) contrast(89%)
+
+}
+
 #contact img {
     width: 25vh;
     padding: 3vw 3vw 0;

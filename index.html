@@ -43,6 +43,12 @@
                 var offsetTop = $(".extratext").offset().top;
                 $(".extratext").css("opacity", 1 - ($(window).scrollTop() - offsetTop) / 700);
             });
+
+            function scrolltotop() {
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
         </script>
 
 
@@ -61,11 +67,63 @@
         </div>
 
         <div id="menu" class="hidden">
-            <table>
-                <tr>
-                    <td></td>
-                </tr>
-            </table>
+            <div style="padding: 8vh 3vw 0;">
+                <div class="headercontainer"><td class="headercontainer"><p class="header">PIZZAS</p></div>
+                <table class="menutable" style="table-layout: fixed; margin: auto;">
+                    <tr>
+                        <td><div><img draggable="false" src="Recursos/Menu/01.png"><p class="title">PEPPERONI</p><p class="price">Chica: $149.99<br>Mediana: $189.99<br>Grande: $219.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/02.png"><p class="title">VEGETARIANA</p><p class="price">Chica: $159.99<br>Mediana: $199.99<br>Grande: $229.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/03.png"><p class="title">HAWAIANA</p><p class="price">Chica: $154.99<br>Mediana: $194.99<br>Grande: $224.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/04.png"><p class="title">CUATRO QUESOS</p><p class="price">Chica: $164.99<br>Mediana: $194.99<br>Grande: $219.99</p></div></td>
+                        <td style="padding: 0 0 3vw 0"><div><img draggable="false" src="Recursos/Menu/05.png"><p class="title">MEAT LOVERS</p><p class="price">Chica: $194.99<br>Mediana: $224.99<br>Grande: $249.99</p></div></td>
+                    </tr>
+                    <tr>
+                        <td><div><img draggable="false" src="Recursos/Menu/06.png"><p class="title">DEL MAR</p><p class="price">Chica: $179.99<br>Mediana: $209.99<br>Grande: $234.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/07.png"><p class="title">CARBONARA</p><p class="price">Chica: $144.99<br>Mediana: $179.99<br>Grande: $209.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/08.png"><p class="title">MARGARITA</p><p class="price">Chica: $149.99<br>Mediana: $164.99<br>Grande: $199.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/09.png"><p class="title">NEW YORK STYLE</p><p class="price">Chica: $129.99<br>Mediana: $144.99<br>Grande: $179.99</p></div></td>
+                        <td style="padding: 0 0 3vw 0"><div><img draggable="false" src="Recursos/Menu/10.png"><p class="title">PARTY PIZZA</p><p class="price">$399.99</p></div></td>
+                    </tr>
+                </table>
+                <div class="headercontainer"><td class="headercontainer"><p class="header">COMPLEMENTOS</p></div>
+                <table class="menutable" style="table-layout: fixed; margin: auto;">
+                    <tr>
+                        <td><div><img draggable="false" src="Recursos/Menu/11.png"><p class="title">PAPAS EN GAJOS</p><p class="price">$24.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/12.png"><p class="title">PAN DE AJO</p><p class="price">$29.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/13.png"><p class="title">BUFFALO WINGS</p><p class="price">$54.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/14.png"><p class="title">BONELESS</p><p class="price">$59.99</p></div></td>
+                        <td style="padding: 0 0 3vw 0"><div><img draggable="false" src="Recursos/Menu/15.png"><p class="title">MINI CALZONES</p><p class="price">$34.99</p></div></td>
+                    </tr>
+                </table>
+                <div class="headercontainer"><td class="headercontainer"><p class="header">POSTRES</p></div>
+                <table class="menutable" style="table-layout: fixed; margin: auto;">
+                    <tr>
+                        <td><div><img draggable="false" src="Recursos/Menu/16.png"><p class="title">SWEETZA</p><p class="price">$94.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/17.png"><p class="title">VILLA CREPAS</p><p class="price">$79.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/18.png"><p class="title">TIRAMISÚ</p><p class="price">$44.99</p></div></td>
+                        <td><div><img draggable="false" src="Recursos/Menu/19.png"><p class="title">VOLCANES</p><p class="price">$69.99</p></div></td>
+                        <td style="padding: 0 0 3vw 0"><div><img draggable="false" src="Recursos/Menu/20.png"><p class="title">HELADO</p><p class="price">$24.99</p></div></td>
+                    </tr>
+                </table>
+                <div class="headercontainer"><td class="headercontainer"><p class="header">BEBIDAS</p></div>
+                <div class="drinklist" style="text-align: center;">
+                    <ul>
+                        <li>Agua Ciel 600ml - $12.00</li>
+                        <li>Coca-Cola 600ml - $15.00</li>
+                        <li>Coca-Cola Light 600ml - $17.00</li>
+                        <li>Coca-Cola Zero 600ml - $18.00</li>
+                        <li>Sprite 600ml - $16.00</li>
+                        <li>Fanta 600ml - $15.00</li>
+                        <li>Sidral Mundet 600ml - $18.00</li>
+                        <li>Lipton Té Verde 600ml - $16.00</li>
+                        <li>Lipton Té Negro 600ml - $16.00</li>
+                        <li>Delaware Punch 600ml - $19.00</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="scrolltotop">
+				<a onclick="scrolltotop()"><img src="Recursos/scrolltotop.png" style="padding: 4vh 0"></a>
+			</div>
         </div>
 
         <div id="contact" class="hidden">
