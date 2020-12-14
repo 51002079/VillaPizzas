@@ -70,6 +70,11 @@ div.hidden {
     opacity: .8;
 }
 
+#menu .menutable {
+    table-layout: fixed;
+    margin: auto;
+}
+
 #menu .menutable td {
     width: 16vw;
     padding: 0 3vw 3vw 0;

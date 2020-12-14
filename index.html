@@ -2,7 +2,7 @@
 <html lang="es-MX">
 
     <head>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"> //jquery es mi salvación :)</script>
         <link rel="stylesheet" href="styles.css">
 		<link rel="icon" href="Recursos/icono.png">
         <title>Villa Pizzas</title>
@@ -11,7 +11,7 @@
     <body style="background-color: black">
 
         <script>
-            $(document).ready(function() {
+            $(document).ready(function() { //script que hace funcionar a la barra de navegación
                 $('#nav a').on('click', function(event) {
                     event.preventDefault();
                     event.stopImmediatePropagation();
@@ -38,13 +38,7 @@
                 });
             });
 
-            $(window).scroll(function(){
-                $(".textblock").css("opacity", 1 - $(window).scrollTop() / 700);
-                var offsetTop = $(".extratext").offset().top;
-                $(".extratext").css("opacity", 1 - ($(window).scrollTop() - offsetTop) / 700);
-            });
-
-            function scrolltotop() {
+            function scrolltotop() { //script que hace funcionar al botón de regresar al inicio
                 event.preventDefault();
                 event.stopImmediatePropagation();
                 window.scrollTo({top: 0, behavior: 'smooth'});
@@ -52,11 +46,11 @@
         </script>
 
 
-        <div id="background" style="background-image: url(Recursos/imgbg.gif); background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; width: 100vw; height: 100vh; position: fixed;"></div>
-        <div id="screen" style="background-color: rgba(0, 0, 0, 0.9); background-size: cover; width: 100vw; height: 100vh; position: fixed;"></div>
+        <div id="background" style="background-image: url(Recursos/imgbg.gif); background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; width: 100vw; height: 100vh; position: fixed;"></div> <!--define al gif del fondo de la página-->
+        <div id="screen" style="background-color: rgba(0, 0, 0, 0.9); background-size: cover; width: 100vw; height: 100vh; position: fixed;"></div> <!--define al rectángulo negro semitransparente encima del gif de fondo-->
 
-
-        <div id="inicio" class="shown">
+        <!--sección de inicio-->
+        <div id="inicio" class="shown"> 
             <img id="iniciologo" src="Recursos/logo.png" draggable="false">
             <table style="margin: auto;">
                 <tr>
@@ -66,10 +60,11 @@
             </table>
         </div>
 
+        <!--sección de menú-->
         <div id="menu" class="hidden">
             <div style="padding: 8vh 3vw 0;">
                 <div class="headercontainer"><td class="headercontainer"><p class="header">PIZZAS</p></div>
-                <table class="menutable" style="table-layout: fixed; margin: auto;">
+                <table class="menutable">
                     <tr>
                         <td><div><img draggable="false" src="Recursos/Menu/01.png"><p class="title">PEPPERONI</p><p class="price">Chica: $149.99<br>Mediana: $189.99<br>Grande: $219.99</p></div></td>
                         <td><div><img draggable="false" src="Recursos/Menu/02.png"><p class="title">VEGETARIANA</p><p class="price">Chica: $159.99<br>Mediana: $199.99<br>Grande: $229.99</p></div></td>
@@ -86,7 +81,7 @@
                     </tr>
                 </table>
                 <div class="headercontainer"><td class="headercontainer"><p class="header">COMPLEMENTOS</p></div>
-                <table class="menutable" style="table-layout: fixed; margin: auto;">
+                <table class="menutable">
                     <tr>
                         <td><div><img draggable="false" src="Recursos/Menu/11.png"><p class="title">PAPAS EN GAJOS</p><p class="price">$24.99</p></div></td>
                         <td><div><img draggable="false" src="Recursos/Menu/12.png"><p class="title">PAN DE AJO</p><p class="price">$29.99</p></div></td>
@@ -96,7 +91,7 @@
                     </tr>
                 </table>
                 <div class="headercontainer"><td class="headercontainer"><p class="header">POSTRES</p></div>
-                <table class="menutable" style="table-layout: fixed; margin: auto;">
+                <table class="menutable">
                     <tr>
                         <td><div><img draggable="false" src="Recursos/Menu/16.png"><p class="title">SWEETZA</p><p class="price">$94.99</p></div></td>
                         <td><div><img draggable="false" src="Recursos/Menu/17.png"><p class="title">VILLA CREPAS</p><p class="price">$79.99</p></div></td>
@@ -121,11 +116,12 @@
                     </ul>
                 </div>
             </div>
-            <div id="scrolltotop">
+            <div id="scrolltotop"> <!--botón de regreso al inicio-->
 				<a onclick="scrolltotop()"><img src="Recursos/scrolltotop.png" style="padding: 4vh 0"></a>
 			</div>
         </div>
 
+        <!--sección de contacto-->
         <div id="contact" class="hidden">
             <div style="padding: 10vh 0 1.75vh">
                 <table style="margin: auto">
@@ -145,9 +141,10 @@
                     </tr>
                 </table>
             </div>
-            <blockquote class="twitter-tweet tw-align-center" data-lang="es" data-theme="dark"><p lang="es" dir="ltr">Las mejores pizzas han llegado a Veracruz - ¡visítanos hoy! <a href="https://t.co/z1jvANnL1p">pic.twitter.com/z1jvANnL1p</a></p>&mdash; Villa Pizzas (@VillaPizzas) <a href="https://twitter.com/VillaPizzas/status/1336490709222830083?ref_src=twsrc%5Etfw">9 de diciembre de 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet tw-align-center" data-lang="es" data-theme="dark"><p lang="es" dir="ltr">Las mejores pizzas han llegado a Veracruz - ¡visítanos hoy! <a href="https://t.co/z1jvANnL1p">pic.twitter.com/z1jvANnL1p</a></p>&mdash; Villa Pizzas (@VillaPizzas) <a href="https://twitter.com/VillaPizzas/status/1336490709222830083?ref_src=twsrc%5Etfw">9 de diciembre de 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <!--tweet en la sección de contacto-->
         </div>
 
+        <!--sección de acerca de nosotros-->
         <div id="about" class="hidden">
             <img src="Recursos/logo.png" draggable="false">
                 <p>
@@ -166,6 +163,7 @@
                 </div>                
         </div>
 
+        <!--barra de navegación-->
         <div id="nav">
             <a id="inicionav" draggable="false" href="javascript:;" class="active">Inicio</a>
             <a id="menunav" draggable="false" href="javascript:;">Menú</a>
